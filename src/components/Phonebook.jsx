@@ -56,6 +56,13 @@ const Phonebook = () => {
         contacts={contacts}
       />
       <h2>Contacts</h2>
+      <input
+        type="text"
+        name="filter"
+        value={filter}
+        onChange={handleChange}
+        placeholder="Search contacts..."
+      />
       <ContactList contacts={filteredContacts} handleDeleteContact={handleDeleteContact} />
     </div>
   );
